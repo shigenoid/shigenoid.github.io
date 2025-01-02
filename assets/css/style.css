@@ -14,16 +14,29 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Editorial-Italic';
+    src: url('fonts/Editorial-Light.woff') format('woff'),
+        url('fonts/Editorial-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: #feffec;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #180f0f;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     touch-action: none;
 }
+
 
 #home {
     margin-top: 10px;
@@ -104,7 +117,7 @@ body {
 
 .navbar {
     background-color: #000;
-    position: absolute; /* Change to absolute to position it relative to the screen */
+    position: fixed; /* Change to fixed so it stays at the bottom */
     bottom: 0;
     width: 75%; /* Set the width to 75% */
     height: 14%;
@@ -114,6 +127,7 @@ body {
     border-radius: 50px 50px 0px 0px;
     left: 50%; /* Move to the center of the screen */
     transform: translateX(-50%); /* Adjust the position to truly center it */
+    z-index: 1000; /* Ensure it stays above other content */
 }
 
 
@@ -123,7 +137,6 @@ body {
 
 .navbar #h2 {
     font-family: 'Editorial-Light', Times, serif;
-    color: #ffffff;
     margin-left: 5%;
     font-size: 2rem;
     letter-spacing: -2px;
@@ -131,13 +144,13 @@ body {
 
 .navbar a {
     font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-size: 2rem;
     position: relative;
     letter-spacing: -2px;
-    font-weight: 300; /* Lighter weight for the text */
+    font-weight: normal; 
+    color: #feffec;
 }
 
 .navbar a:hover {

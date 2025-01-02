@@ -3,21 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
 </head>
 <body>
+    <div id="home-point"></div>
     <div id="home">
         <div class="header">
-            <h1 id="welcome">Welcome!</h1>
+            <h1 id="welcome">noid!</h1>
             <div class="flower">
-                <img src="images/sunflower.png" alt="Sunflower">
+                <img src="assets/images/sunflower.png" alt="Sunflower">
             </div>
         </div>
     
         <div class="morse-bar">
             <div class="bar">
                 <p id="morse-display"></p>
-                <button><img src="images/Arrow 6.svg"></button>
+                <button><img src="assets/images/Arrow 6.svg"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-point"></div>
+    <div id="about">
+        <div id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/images/me.jpg" alt="Artist Photo">
+                </div>
+                <div class="about-text">
+                    <div class="about-heading">
+                        <div id="art-container"></div>
+                        <h2>Meet The <span id="artist">Artist!</span></h2>
+                    </div>
+                    <div class="about-description">
+                        <p style="font-style: italic; color: #D0D1B4">Well... not a literal artist...</p>
+                        <p>
+                            I’m Nasharuddin Hatta, and i 照顧病人、跟隨病人是很重要的，但它會發生在這樣一個有很多工作和痛苦的時候。細究起來，任何人都不應該從事任何一種工作，除非他能從中得到一些好處。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -26,17 +51,16 @@
     <div class="navbar">
         <p id="h2">&copy;shigenoid</a>
         <div class="menu">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
+            <a href="#home-point">home</a>
+            <a href="#about-point">about</a>
             <a href="#artworks">artworks</a>
             <a href="#contact">contact</a>
         </div>
-        
     </div>
 
-    <script src="script.js"></script>
-    <script src="morse.js"></script>
-    <script src="sunflower.js"></script>
+    <script src="assets/js/about.js"></script>
+    <script src="assets/js/morse.js"></script>
+    <script src="assets/js/sunflower.js"></script>
     
 </body>
 </html>

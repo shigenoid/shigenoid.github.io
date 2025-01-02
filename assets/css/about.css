@@ -1,0 +1,83 @@
+/* About Section Styling */
+
+
+#about {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #180f0f;
+    color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    border: 1px solid #D0D1B4;
+}
+
+.about-text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-heading h2 {
+    font-family: 'Editorial', sans-serif;
+    font-size: 5rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: -5px;
+    margin-top: -2px;
+}
+
+.about-description p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    line-height: 1.8;
+    letter-spacing: -1px;
+}
+
+#artist {
+    font-size: 4.5rem; /* Fixed font size */
+    margin-bottom: 10px;
+    transition: font-family 0.5s ease; /* Smooth transition for font change */
+    padding-left: 25px;
+    padding-bottom: 10px;
+    position: absolute;
+    background-color: transparent;
+    transition: all 0.5s ease;
+   
+}
+
+#art-container {
+    width: 0px;
+    height: 70px;
+    background-color: yellow;
+    position: absolute;
+    mix-blend-mode:difference;
+    margin-left: 290px;
+    margin-top: 10px;
+    z-index: 1;
+    transition: width 1s cubic-bezier(0, 0.55, 0.45, 1);
+    transform: skew(-10deg);
+}
