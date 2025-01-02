@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Editorial';
+    src: url(fonts/Editorial-New.otf);
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Editorial';
+    background-color: #110A0A;
+}
+
+h1 {
+    font-size: 200px;
+    letter-spacing: -10px;
 }
