@@ -8,7 +8,7 @@
 <body>
     <div id="home">
         <div class="header">
-            <h1>Welcome!</h1>
+            <h1 id="welcome">Welcome!</h1>
             <div class="flower">
                 <img src="images/sunflower.png" alt="Sunflower">
             </div>
@@ -16,7 +16,7 @@
     
         <div class="morse-bar">
             <div class="bar">
-                <p>-- ..- .-.. - .. .--. .-.. .</p>
+                <p id="morse-display"></p>
                 <button><img src="images/Arrow 6.svg"></button>
             </div>
         </div>
@@ -24,7 +24,7 @@
     
 
     <div class="navbar">
-        <h2>&copy;shigenoid</h2>
+        <p id="h2">&copy;shigenoid</a>
         <div class="menu">
             <a href="#home">home</a>
             <a href="#about">about</a>
@@ -33,5 +33,10 @@
         </div>
         
     </div>
+
+    <script src="script.js"></script>
+    <script src="morse.js"></script>
+    <script src="sunflower.js"></script>
+    
 </body>
 </html>
