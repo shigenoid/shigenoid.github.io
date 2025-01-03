@@ -25,8 +25,10 @@ function updateMorse() {
 }
 updateMorse();
 
+const bar = document.querySelector(".morse-bar .bar");
+
 document.addEventListener("DOMContentLoaded", () => {
-    const bar = document.querySelector(".morse-bar .bar");
+    
     if (bar) {
         // Add the class to trigger the transition
         setTimeout(() => {
@@ -34,3 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500); // Add a small delay for the animation to look smooth
     }
 });
+
+function refresh() {
+    bar.style.transition = "width 0.5s cubic-bezier(0.83, 0, 0.17, 1)";
+    if (bar) {
+        // Remove the "expand" class to trigger the de-expansion animation
+        bar.classList.remove("expand");
+
+        // Wait for the de-expansion animation to complete before reloading
+        setTimeout(() => {
+            location.reload();
+        }, 500); // Match this delay with the CSS transition duration
+    } else {
+        location.reload();
+    }
+}

@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Ensure the page is scrolled to the top after content is fully loaded
+    setTimeout(() => {
+        window.scrollTo(0, 0); // Scroll to the top
+    }, 100); // Small delay to ensure it's executed after rendering
+
     const loaderScreen = document.getElementById("loader-screen");
     const content = document.getElementById("content");
     const loaderImage = document.querySelector("#loader img");
