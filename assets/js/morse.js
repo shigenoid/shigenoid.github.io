@@ -24,3 +24,13 @@ function updateMorse() {
     setTimeout(updateMorse, 200);
 }
 updateMorse();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const bar = document.querySelector(".morse-bar .bar");
+    if (bar) {
+        // Add the class to trigger the transition
+        setTimeout(() => {
+            bar.classList.add("expand");
+        }, 500); // Add a small delay for the animation to look smooth
+    }
+});
