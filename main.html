@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>shigenoid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/fade.css">
+    <link rel="icon" href="assets/images/sunflower.png">
+</head>
+<body>
+    <div class="fade-overlay"></div>
+    <div id="loader-screen">
+        <div id="loader">
+            <img src="assets/images/sunflower-load.png" alt="Loading" />
+        </div>
+    </div>
+
+    <div id="home-point"></div>
+    <div id="home">
+        <div class="header">
+            <h1 id="welcome">noid!</h1>
+            <div class="flower rotate">
+                <img src="assets/images/sunflower.png" alt="Sunflower">
+            </div>
+        </div>
+    
+        <div class="morse-bar">
+            <div class="bar">
+                <p id="morse-display"></p>
+                <button onclick="refresh()"><img src="assets/images/Arrow 6.svg"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-point"></div>
+    <div id="about">
+        <div id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/images/me.jpg" alt="Artist Photo">
+                </div>
+                <div class="about-text">
+                    <div class="about-heading">
+                        <div id="art-container"></div>
+                        <h2>Meet The <span id="artist">Artist!</span></h2>
+                    </div>
+                    <div class="about-description">
+                        <p style="font-style: italic; color: #D0D1B4">Well... not a literal artist...</p>
+                        <p>
+                            I'm a first-year student who loves computer science, robotics, and IT.
+                            I'm really excited to learn more, improve my skills, and do well in these fields.
+                            I also worked on fun projects, join competitions, and team up with others to make 
+                            a difference!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="navbar">
+        <a href="https://linktr.ee/shigenoid" id="h2">&copy;shigenoid</a>
+        <div class="menu">
+            <a href="#home-point">home</a>
+            <a href="#about-point">about</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+        </div>
+    </div>
+
+    <script src="assets/js/about.js"></script>
+    <script src="assets/js/morse.js"></script>
+    <script src="assets/js/sunflower.js"></script>
+    <script src="assets/js/loader.js"></script>
+    
+</body>
+</html>

@@ -38,16 +38,41 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function refresh() {
+    const bar = document.querySelector('.bar'); // Ensure bar element is selected
+    const fadeOverlay = document.createElement('div'); // Create a fade overlay
+
+    // Add the overlay to the body
+    fadeOverlay.classList.add('fade-overlay');
+    document.body.appendChild(fadeOverlay);
+
+    // Trigger the fade effect
+    setTimeout(() => {
+        fadeOverlay.classList.add('active'); // Activate the fade
+
+        setTimeout(() => {
+            const currentPath = window.location.pathname;
+        
+            if (currentPath === "/index.html" || currentPath === "/") {
+                window.location.href = "main.html"; // Redirect to main.html
+            } else if (currentPath === "/main.html") {
+                window.location.href = "index.html"; // Redirect to index.html
+            }
+        }, 1000); 
+    }, 0); // Ensure the fade starts immediately
+
     bar.style.transition = "width 0.5s cubic-bezier(0.83, 0, 0.17, 1)";
+
     if (bar) {
         // Remove the "expand" class to trigger the de-expansion animation
         bar.classList.remove("expand");
 
-        // Wait for the de-expansion animation to complete before reloading
+        // Wait for the de-expansion animation to complete before triggering the fade
         setTimeout(() => {
-            location.reload();
-        }, 500); // Match this delay with the CSS transition duration
+            fadeOverlay.classList.add('active'); // Add the fade effect
+        }, 500); // Adjust timing to match the bar animation
     } else {
-        location.reload();
+        // Trigger the fade if no bar element is found
+        fadeOverlay.classList.add('active');
+        window.location.href = "main.html";
     }
 }
