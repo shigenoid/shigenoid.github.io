@@ -22,9 +22,15 @@
     font-style: normal;
 }
 
-html {
+* {
     scroll-behavior: smooth;
     color: #feffec;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -35,6 +41,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     touch-action: none;
+    
 }
 
 
