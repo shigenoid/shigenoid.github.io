@@ -3,20 +3,17 @@
 
 #about {
     margin-top: 25px;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-
 }
 
 .about-container {
     display: flex;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
     gap: 30px;
-    
 }
 
 .about-image {
@@ -28,7 +25,7 @@
 
 .about-image img {
     width: 100%;
-    max-width: 550px;
+    max-width: 350px;
     border-radius: 20px;
     border: 1px solid #D0D1B4;
 }
@@ -55,7 +52,6 @@
     margin: 10px 0;
     line-height: 1.8;
     letter-spacing: -1px;
-    max-width: 500px;
 }
 
 #artist {

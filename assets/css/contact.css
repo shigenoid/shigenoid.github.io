@@ -1,0 +1,24 @@
+/* styles.css */
+#contact {
+    text-align: center;
+    padding-bottom: 200px;
+  }
+  
+  #contact .heading {
+    font-family: 'Editorial', serif;
+    font-size: 6rem;
+    font-weight: normal;
+    letter-spacing: -6px;
+    margin-bottom: -25px;
+  }
+  
+  #contact .phone-image img {
+    width: 350px;
+  }
+  
+  #contact .contact-list {
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
