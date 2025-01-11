@@ -1,0 +1,58 @@
+.navbar {
+    background-color: #000;
+    position: fixed; /* Change to fixed so it stays at the bottom */
+    bottom: 0;
+    width: 75%; /* Set the width to 75% */
+    height: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px 50px 0px 0px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1000;
+}
+
+.menu {
+    margin-right: 5%;
+}
+
+.navbar #h2 {
+    font-family: 'Editorial-Light', Times, serif;
+    margin-left: 5%;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    color: #feffec;
+    text-decoration: none;
+}
+
+.navbar .menu a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 2rem;
+    position: relative;
+    letter-spacing: -2px;
+    font-weight: normal; 
+    color: #feffec;
+}
+
+.navbar .menu a:hover {
+    color: #827878;
+    transition: 0.1s linear;
+}
+
+.navbar .menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #FFFFFF;
+    transition: width 0.3s;
+}
+
+.navbar .menu a:hover::after {
+    width: 100%;
+}

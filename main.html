@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/loader.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/contact.css">
@@ -12,6 +13,16 @@
     <link rel="icon" href="assets/images/sunflower.png">
 </head>
 <body>
+    <div class="navbar">
+        <a href="https://linktr.ee/shigenoid" id="h2">&copy;shigenoid</a>
+        <div class="menu">
+            <a href="#home-point">home</a>
+            <a href="#about-point">about</a>
+            <a href="https://www.instagram.com/noid.js/" target="_blank">projects</a>
+            <a href="#contact">contact</a>
+        </div>
+    </div>
+
     <div class="fade-overlay"></div>
     <div id="loader-screen">
         <div id="loader">
@@ -62,30 +73,45 @@
         </div>
     </div>
 
-    <div id="contact">
-        <h1 class="heading">Let's Get In Touch!</h1>
-        <div class="phone-image">
-          <img src="assets/images/analog-phone.png" alt="Phone Illustration">
+    <div class="contact-container">
+        <div class="left-section">
+          <h1>Let's <br>Create <br>Together!</h1>
         </div>
-        <div class="contact-list">
-          <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdBRwhBWTkdCQCzPTWkDXVFGkMgwDGVNbJJgGgFcpRmSDZTzwTcpnbNqjPdwzWXSnbtDB" 
-          class="contact-item"><img src="assets/images/email.svg" target="_blank"></a>
-          <a href="https://www.linkedin.com/in/nasharuddin-hatta/" target="_blank" class="contact-item"><img src="assets/images/linkedin.svg"></a>
-          <a href="https://discordapp.com/users/759702634344611900" target="_blank" class="contact-item"><img src="assets/images/discord.svg"></a>
-          <a href="https://www.instagram.com/shigenoid/" target="_blank" class="contact-item"><img src="assets/images/instagram.svg"></a>
-        </div>
-    </div>
     
+        <div class="right-section">
+          <div class="contact-info">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZdBRwhBWTkdCQCzPTWkDXVFGkMgwDGVNbJJgGgFcpRmSDZTzwTcpnbNqjPdwzWXSnbtDB" target="_blank" id="email">shigenoid@gmail.com</a>
+            <div class="social-links">
+              <a href="https://github.com/shigenoid" target="_blank"><img src="assets/images/github.svg" alt="GitHub">Github</a>
+              <a href="https://www.linkedin.com/in/nasharuddin-hatta/" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn">LinkedIn</a>
+              <a href="https://discordapp.com/users/759702634344611900" target="_blank"><img src="assets/images/discord.svg" alt="Discord">Discord</a>
+              <a href="https://www.instagram.com/shigenoid/" target="_blank"><img src="assets/images/instagram.svg" alt="Instagram">Instagram</a>
+            </div>
+          </div>
+          <div class="form-container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3e6319d1-1472-4d65-a0e8-eba18adc763f">
+                <input type="hidden" name="redirect" value="https://shigenoid.github.io/index.html">
+                <div class="form-group">
+                    <h3>Or send it here...</h3>
+                    <p>Your Name</p>
+                    <input type="name" name="name" id="email-input" maxlength="50" autocomplete="off" required>
+                </div>
+                  <div class="form-group">
+                    <p>Message</p>
+                    <div class="input-wrapper">
+                      <textarea name="message" id="message-input" maxlength="250" autocomplete="off" required></textarea>
+                      <button type="submit" class="submit-button">
+                        <img src="assets/images/arrow2.svg" alt="Submit">
+                      </button>
+                    </div>
+                </div>
+            </form>
+            
+          </div>
+      </div>
 
-    <div class="navbar">
-        <a href="https://linktr.ee/shigenoid" id="h2">&copy;shigenoid</a>
-        <div class="menu">
-            <a href="#home-point">home</a>
-            <a href="#about-point">about</a>
-            <a href="https://www.instagram.com/noid.js/" target="_blank">projects</a>
-            <a href="#contact">contact</a>
-        </div>
-    </div>
+    
 
     <script src="assets/js/about.js"></script>
     <script src="assets/js/morse.js"></script>
