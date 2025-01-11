@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Ensure the page is scrolled to the top after content is fully loaded
     setTimeout(() => {
-        window.scrollTo(0, 0); // Scroll to the top
-    }, 100); // Small delay to ensure it's executed after rendering
+        window.scrollTo(0, 0);
+    }, 100);
 
     const loaderScreen = document.getElementById("loader-screen");
     const content = document.getElementById("content");
@@ -10,25 +9,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let rotation = 0;
 
-    // Function to make the image rotate choppily
     const rotateImage = () => {
-        rotation += 10; // Rotate by 10 degrees per interval
+        rotation += 10;
         loaderImage.style.transform = `rotate(${rotation}deg)`;
     };
 
-    // Start the choppy rotation
-    const rotationInterval = setInterval(rotateImage, 100); // Rotate every 100ms
+    const rotationInterval = setInterval(rotateImage, 100);
 
-    // After 500ms, start fading the background and the image
     setTimeout(() => {
-        loaderScreen.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Fade background to transparent
-        loaderImage.style.opacity = "0"; // Fade out the image
+        loaderScreen.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        loaderImage.style.opacity = "0";
     }, 500);
 
-    // After 1000ms (500ms + fade duration), hide loader and show content
     setTimeout(() => {
-        clearInterval(rotationInterval); // Stop the rotation
-        loaderScreen.style.display = "none"; // Hide the loader
-        content.style.display = "block"; // Show the content
+        clearInterval(rotationInterval);
+        loaderScreen.style.display = "none";
+        content.style.display = "block";
     }, 1000);
 });

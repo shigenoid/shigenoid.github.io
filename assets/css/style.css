@@ -62,15 +62,15 @@ body {
     font-family: 'Editorial', 'Times New Roman', Times, serif;
     font-weight: normal;
     letter-spacing: -15px;
-    vertical-align: middle; /* Align vertically */
+    vertical-align: middle;
 }
 
 .header .flower {
     display: inline-block;
     width: 12rem;
     height: 12rem;
-    vertical-align: top; /* Align to the top */
-    margin-top: 8rem; /* Fine-tune the vertical alignment */
+    vertical-align: top;
+    margin-top: 8rem;
 }
 
 .header .flower img {
@@ -95,7 +95,7 @@ body {
     align-items: center;
     width: 0px; 
     height: 6rem;
-    overflow: hidden; /* Ensures text doesn't overflow outside the bar */
+    overflow: hidden;
     transition: width 1s cubic-bezier(0, 0.55, 0.45, 1);
 }
 
@@ -104,13 +104,13 @@ body {
 }
 
 .morse-bar .bar p {
-    flex-grow: 1; /* Allow the text to grow and take available space */
+    flex-grow: 1;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3rem; /* Increased font size */
+    font-size: 3rem;
     text-align: center;
     white-space: nowrap;
-    overflow: hidden; /* Ensure text doesn't overflow */
+    overflow: hidden; 
     
 }
 

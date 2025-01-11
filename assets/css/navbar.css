@@ -1,8 +1,8 @@
 .navbar {
     background-color: #000;
-    position: fixed; /* Change to fixed so it stays at the bottom */
+    position: fixed; 
     bottom: 0;
-    width: 75%; /* Set the width to 75% */
+    width: 75%;
     height: 14%;
     display: flex;
     align-items: center;

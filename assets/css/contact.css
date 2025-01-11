@@ -51,11 +51,10 @@
   gap: 0.5rem;
   transition: color 0.3s ease, opacity 0.3s ease;
   text-decoration: none;
-  position: relative; /* Needed for underline effect */
 }
 
 .social-links a:hover {
-  opacity: 0.5; /* Fades the link to 50% on hover */
+  opacity: 0.5; 
 }
 
 
@@ -114,7 +113,7 @@
   font-size: 1rem;
   color: #e5e5e5;
   border: none;
-  border-bottom: 1px solid #e5e5e5; /* Only bottom border */
+  border-bottom: 1px solid #e5e5e5; 
   background-color: transparent;
   outline: none;
   border-radius: 0;
@@ -134,8 +133,8 @@
 }
 
 .submit-button img {
-  width: 1.5rem; /* Adjust as needed */
-  height: 1.5rem; /* Adjust as needed */
+  width: 1.5rem;
+  height: 1.5rem; 
 }
 
 #email {
